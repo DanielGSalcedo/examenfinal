@@ -16,14 +16,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class cliente {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private Integer id;
-	
-	private String nombre;
-	
-	@Id
-	private String documento;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nombre;
+
 	
 	@ManyToOne
 	@JoinColumn(name = "tipo_documento_id")

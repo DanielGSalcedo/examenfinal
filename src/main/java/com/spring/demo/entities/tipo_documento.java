@@ -15,10 +15,9 @@ import lombok.NoArgsConstructor;
 public class tipo_documento {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private Integer id;
-	
-	private String nombre;
-	
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nombre;
 	
 }
