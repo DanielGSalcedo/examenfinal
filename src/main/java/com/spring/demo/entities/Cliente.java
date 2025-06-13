@@ -7,11 +7,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Cliente {
@@ -21,10 +23,10 @@ public class Cliente {
     private Long id;
 
     private String nombre;
-
+    private String documento;
+    
 	@ManyToOne
 	@JoinColumn(name = "tipo_documento_id")
-	private Integer tipo_documento;
-	
+	private TipoDocumento tipoDocumento;
 	
 }
