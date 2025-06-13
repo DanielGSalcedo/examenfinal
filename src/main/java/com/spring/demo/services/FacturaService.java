@@ -31,16 +31,16 @@ import jakarta.transaction.Transactional;
 public class FacturaService {
 	
 
-    private final ClienteRepository clienteRepository;
-    private final TipoDocumentoRepository tipoDocumentoRepository;
-    private final ProductoRepository productoRepository;
-    private final CompraRepository compraRepository;
-    private final DetallesCompraRepository detallesCompraRepository;
-    private final TipoPagoRepository tipoPagoRepository;
-    private final PagoRepository pagoRepository;
-    private final VendedorRepository vendedorRepository;
-    private final CajeroRepository cajeroRepository;
-    private final TiendaRepository tiendaRepository;
+    private final ClienteRepository clienteRepository = null;
+    private final TipoDocumentoRepository tipoDocumentoRepository = null;
+    private final ProductoRepository productoRepository = null;
+    private final CompraRepository compraRepository = null;
+    private final DetallesCompraRepository detallesCompraRepository = null;
+    private final TipoPagoRepository tipoPagoRepository = null;
+    private final PagoRepository pagoRepository = null;
+    private final VendedorRepository vendedorRepository = null;
+    private final CajeroRepository cajeroRepository = null;
+    private final TiendaRepository tiendaRepository = null;
 
     @Transactional
     public Compra procesarFactura(String tiendaUuid, FacturaDTO facturaDTO) {
