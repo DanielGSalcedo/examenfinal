@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class tipo_documento {
+public class TipoProducto {
 
-	@Id
+ 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
