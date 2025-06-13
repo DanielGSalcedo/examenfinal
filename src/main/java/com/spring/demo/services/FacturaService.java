@@ -2,6 +2,8 @@ package com.spring.demo.services;
 
 import java.time.LocalDateTime;
 
+import org.springframework.stereotype.Service;
+
 import com.spring.demo.dto.FacturaDTO;
 import com.spring.demo.dto.MedioPagoDTO;
 import com.spring.demo.dto.ProductoFacturaDTO;
@@ -28,7 +30,8 @@ import com.spring.demo.repositories.VendedorRepository;
 
 import jakarta.transaction.Transactional;
 
-public class FacturaService {
+@Service
+public class FacturaService {	
 	
 
     private final ClienteRepository clienteRepository = null;
